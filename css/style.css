@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-sizing: border-box;
+   text-align: center;
+   color: #fff;
+   /*padding: 1em;*/
+   height: 100vh;
+}
+
+main {
+   height: 100%;
+}
+
+article {
+   display: flex;
+   justify-content: center;
+   min-height: 100%;
+   background-color: #675ba7;
+}
+
+nav {
+   background-color: coral;
+}
+
+header,
+footer {
+   background-color: darkolivegreen;
+}
