@@ -1,32 +1,191 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
+html {
+   box-sizing: border-box;
+}
+
 body {
-   display: flex;
+   /* display: flex;
    flex-direction: column;
    justify-content: space-between;
    box-sizing: border-box;
    text-align: center;
+   align-items: stretch;
    color: #fff;
-   /*padding: 1em;*/
-   height: 100vh;
-}
-
-main {
+   height: 100vh; */
+   width: 100%;
    height: 100%;
 }
 
-article {
+.all-content {
+   min-height: 100%;
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   align-items: stretch;
+   color: #fff;
+   font-family: "Source Sans Pro", sans-serif;
+}
+
+main {
+   flex-grow: 1;
+}
+
+article {
    min-height: 100%;
    background-color: #675ba7;
 }
 
 nav {
-   background-color: coral;
+   background-color: #2D2D2D;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+   color: inherit;
+   text-decoration: none;
+}
+
+a {
+   border-bottom: dotted 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: inherit;
+   font-weight: 600;
+   line-height: 1.75em;
+}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+   font-style: normal;
+   font-weight: 300;
+}
+
+ul {
+   list-style: disc;
+   padding-left: 1em;
+}
+
+nav > ul {
+   display: flex;
+   justify-content: center;
+   margin: 0;
+}
+nav > ul > li {
+   padding: 1em;
+   list-style-type: none;
+}
+
+nav > ul > li a {
+   color: #c0c0c0;
+   text-decoration: none;
+   border: 0;
+   display: block;
+   padding: 1em 0.5em 1em 0.5em;
+   font-size: 22px;
+}
+
+#home {
+   color: #fff;
+   font-weight: bold;
+}
+
+.blue-line {
+   background-color: #56B3FE;
+   padding: 0.5em;
+}
+.page-header {
+   background-color: #ffffff;
+   text-align: center;
+   padding: 4.5em 0 0 0;
+}
+
+.page-header h1 {
+   padding: 0 0 4em 0;
+   margin: 0;
+}
+
+.page-header h1 a {
+   font-size: 1.9em;
+   letter-spacing: -0.025em;
+   border: 0;
+   color: #474747;
+}
+
+.banner header h2 em {
+   opacity: 0.75;
+}
+
+.banner {
+   background-image: url(../images/banner.jpg);
+   background-position: center center;
+   background-size: cover;
+   text-align: center;
+   position: relative;
+   height: 38em;
+}
+
+.banner header h2 a {
+   border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner header {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background: #212121;
+   background: rgba(27, 27, 27, 0.75);
+   color: #fff;
+   padding: 1.5em 0;
+}
+
+.banner header h2 {
+   display: inline-block;
+   margin: 0;
+   font-size: 1.25em;
+   vertical-align: middle;
+}
+
+button {
+   vertical-align: middle;
+   margin-left: 1em;
+   border-radius: 5px;
+   background-color: #37c0fb;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   padding: 1em 2.2em;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 1em;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.button:hover {
+   background-color: #50c8fc;
+   color: #fff !important;
 }
 
 header,
+main,
 footer {
+   flex-shrink: 0;
    background-color: darkolivegreen;
 }
