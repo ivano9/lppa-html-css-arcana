@@ -189,11 +189,16 @@ button {
    margin: 0;
    list-style: none;
    background: #fff;
-   padding: 5em 10em 3em 10em;
+   padding: 7em 10em 6em 10em;
    /* display: flex;
    justify-content: center;
    background: #fff;
    padding: 5em 0 3em 0; */
+}
+
+.wrapper-s2 {
+   background-color: #f3f3f3;
+   padding: 3em 10em 3em 10em;
 }
 .center {
    justify-content: space-evenly;
@@ -201,6 +206,8 @@ button {
 
 .center li {
    margin: 0 10px 0 10px;
+   width: 400px;
+   font-size: 18px;
 }
 
 .icon.major::before {
@@ -232,5 +239,4 @@ header,
 main,
 footer {
    flex-shrink: 0;
-   background-color: darkolivegreen;
 }
